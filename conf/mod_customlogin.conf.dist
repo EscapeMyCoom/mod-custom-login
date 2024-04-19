@@ -34,7 +34,7 @@ Login.BoA.Shoulders2 = 0
 Login.BoA.Chest = 0
 Login.BoA.Chest2 = 0
 Login.BoA.Trinket = 1
-Login.BoA.Trinket2 = 0
+Login.BoA.Trinket2 = 1
 Login.BoA.Weapon = 0
 Login.BoA.Weapon2 = 0
 Login.BoA.Weapon3 = 0
@@ -46,7 +46,7 @@ Login.Skills = 1
 Login.SpecialAbility = 0
 
 # New characters start with Exalted reputation for main city factions? (default: 1)
-Login.Reputation = 1
+Login.Reputation = 0
 
 
 

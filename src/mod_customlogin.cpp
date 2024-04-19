@@ -152,7 +152,7 @@ public:
             {
                 // Define Equipment
                 uint32 shoulders = 0, chest = 0, trinket = 0, weapon = 0, weapon2 = 0, weapon3 = 0, shoulders2 = 0, chest2 = 0, trinket2 = 0;
-                const uint32 bag = 23162;		// Foror's Crate of Endless Resist Gear Storage (36 Slot)
+                const uint32 bag = 4240;		// Woolen Bag (8 slot)
                 const uint32 ring = 50255;		// Dread Pirate Ring (5% XP Boost)
 
                 // Outfit the character with bags and heirlooms that match their class
