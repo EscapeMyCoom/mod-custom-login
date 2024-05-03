@@ -152,7 +152,7 @@ public:
             {
                 // Define Equipment
                 uint32 shoulders = 0, chest = 0, trinket = 0, weapon = 0, weapon2 = 0, weapon3 = 0, shoulders2 = 0, chest2 = 0, trinket2 = 0;
-                const uint32 bag = 4240;		// Woolen Bag (8 slot)
+                const uint32 bag = 5576;		// Large Brown Sack (10 Slot)
                 const uint32 ring = 50255;		// Dread Pirate Ring (5% XP Boost)
 
                 // Outfit the character with bags and heirlooms that match their class
@@ -260,7 +260,7 @@ public:
                     if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
                     if (LoginBOAChest) { player->AddItem(chest, 1); }
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 case CLASS_DEATH_KNIGHT:
@@ -271,7 +271,7 @@ public:
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
                     if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
                     if (LoginBOAWeapon3) { player->AddItem(weapon3, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 case CLASS_PALADIN:
@@ -281,7 +281,7 @@ public:
                     if (LoginBOAChest) { player->AddItem(chest, 1); }
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
                     if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 case CLASS_WARRIOR:
@@ -292,7 +292,7 @@ public:
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
                     if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
                     if (LoginBOAWeapon3) { player->AddItem(weapon3, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 case CLASS_HUNTER:
@@ -303,7 +303,7 @@ public:
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
                     if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
                     if (LoginBOAWeapon3) { player->AddItem(weapon3, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 case CLASS_ROGUE:
@@ -313,7 +313,7 @@ public:
                     if (LoginBOAChest) { player->AddItem(chest, 1); }
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
                     if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 case CLASS_DRUID:
@@ -326,7 +326,7 @@ public:
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
                     if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
                     if (LoginBOAWeapon3) { player->AddItem(weapon3, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 case CLASS_SHAMAN:
@@ -338,7 +338,7 @@ public:
                     if (LoginBOAChest2) { player->AddItem(chest2, 1); }
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
                     if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 default:
@@ -347,13 +347,13 @@ public:
                     if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
                     if (LoginBOAChest) { player->AddItem(chest, 1); }
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
                 }
 
                 // Inform the player they have new items
                 std::ostringstream ss;
-                ss << "|cffFF8000[|cFFBDB76BCL|cffFF8000] The Owner has placed |cFFBDB76Ba surprise|cffFF8000 in your backpack!";
+                ss << "|cffFF8000[|cFFBDB76BCL|cffFF8000] Good luck out there, you'll need it.";
                 ChatHandler(player->GetSession()).SendSysMessage(ss.str().c_str());
             }
 
